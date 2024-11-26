@@ -1,3 +1,11 @@
+<script setup lang="ts">
+definePage({
+  meta: {
+    layout: 'LayoutAbout',
+  },
+})
+</script>
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>
