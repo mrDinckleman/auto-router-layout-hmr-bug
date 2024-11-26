@@ -16,4 +16,17 @@ export default [
   ...pluginVue.configs['flat/essential'],
   ...vueTsEslintConfig(),
   skipFormatting,
+
+  {
+    // @see https://uvr.esm.is/guide/eslint#eslint
+    name: 'app/unplugin-vue-router/routes',
+    languageOptions: {
+      globals: {
+        definePage: 'readonly',
+      },
+    },
+    settings: {
+      'import/core-modules': ['vue-router/auto-routes'],
+    },
+  },
 ]
